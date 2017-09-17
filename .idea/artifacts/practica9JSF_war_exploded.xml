@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="practica9JSF:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/practica9JSF_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="practica9JSF/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="practica9JSF" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
