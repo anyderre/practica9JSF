@@ -1,0 +1,31 @@
+<!--Documento bien formado basado en XML-->
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- El Doctype propio de HTML 5-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Indica el namespaces xml indicando los validadores -->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<!-- Formulario en JSF-->
+<h:form>
+    <!-- Representa una tabla de componentes JSF-->
+    <h:panelGrid columns="3">
+        <!-- Label-->
+        <h:outputLabel value="Nombre:"/>
+        <!-- Input tipo text.-->
+        <h:inputText id="nombre" value="#{miFormulario.nombre}" />
+        <!-- Salida de los mensajes-->
+        <h:message for="nombre"/>
+
+        <h:outputLabel value="Apellido:"/>
+        <h:inputText id="apellido" value="#{miFormulario.apellido}"/>
+        <h:message for="apellido"/>
+
+    </h:panelGrid>
+    <!-- Botón asociado a una funcionalidad-->
+    <h:commandButton action="null" value="Procesar"/>
+</h:form>
+
+</html>
