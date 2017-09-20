@@ -126,7 +126,8 @@ public class FormBasico implements Serializable {
        Contacto contacto = new Contacto(nombre, apellido,direccion, telefono, email);
         contactos.add(contacto);
         limpiarDatos();
-        return "resultado?param1=valor&param2=valor2"; //regla de navegacion....
+        System.out.println(nombre+"/"+apellido+"/"+direccion+"/");
+        return "resultado?param1="+nombre+"&param2="+apellido; //regla de navegacion....
     }
 
     /**
